@@ -1,0 +1,147 @@
+@import "compass";
+
+$light_red: rgb(255,110,108);
+$dark_red: rgb(150,34,35);
+
+// base
+html {
+  background: black image_url('background.jpg') no-repeat 30% 80px;  
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  color: white;
+  background: transparent;
+  font-family: "futura-pt", sans-serif;
+  font-size: 16px;
+  line-height: 1.7em;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  @include text-shadow(1px 1px $dark_red);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.main {
+  @include clearfix;
+  margin-bottom: 135px;
+}
+
+.bottombar {
+  @include clearfix;
+  text-align: center;
+}
+
+footer {
+  margin-top: 72px;
+  text-align: center
+}
+
+// modules
+
+.cfp {
+  width: 400px;
+  float: right;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  @include text-shadow(1px 1px $dark_red);
+
+  .twitter-share-button {
+    margin-left: 20px;
+  }
+}
+
+.newsletter {
+  width: 400px;
+  float: left;
+}
+
+.social {
+  width: 400px;
+  float: right;
+
+  a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.button, input[type=email].email {
+  display: inline-block;
+  outline: none;
+  line-height: 18px;
+  border: 2px solid $dark_red;  
+  @include border-radius(14px);
+  font-size: 14px;
+  margin: 18px 0;
+  padding: 5px 20px 4px;
+  height: auto;
+}
+
+.button {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  @include text-shadow(0 -1px grey);
+  background: #0095cd;
+  @include background(linear-gradient(top, $light_red, $dark_red));
+  cursor: pointer;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+}  
+
+input[type=email].email {
+  @include border-right-radius(0);
+  margin: 0 -4px 18px 0;
+  width: 200px;
+
+  + input[type=submit] {
+    border-left: none;
+    @include border-left-radius(0);
+    width: auto;
+    margin-top: 0;
+
+    &:active {
+      top: 0;
+    }
+  }
+}
+
+.modal {
+
+  .modal-body {
+    max-height: 500px;
+  }
+
+  .fade.in {
+    top: 30%;
+  }
+}
+
+
+// status
+.is-hidden {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.button:hover {
+  @include background(linear-gradient(top, $dark_red, $light_red)); 
+  text-decoration: none;
+  color: white; 
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+  @include background(linear-gradient(top, $dark_red, $light_red));  
+}
+

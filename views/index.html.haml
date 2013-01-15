@@ -1,0 +1,70 @@
+<!doctype html>
+%html
+  %head
+    %title Rubyday 2013 &middot; The Italian Ruby Conference
+    %link{rel: "stylesheet", href: "/stylesheets/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href: "/stylesheets/style.css"}/
+    %script{type: "text/javascript", src: "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    %script{type: "text/javascript", src: "/javascripts/bootstrap.min.js"}
+    %script{type: "text/javascript", src: "//use.typekit.net/pej1prk.js"}
+    :javascript
+      try{Typekit.load();}catch(e){}
+
+
+  %body
+    %header
+      %h2 &hellip;under the surface, we're hard at work to bring you the best Italian Ruby Conf to date      
+      %h1.is-hidden Rubyday 2013
+      %img.logo{src: "/images/logo.png", alt: "Rubyday 2013"}
+      .date
+        June, 2013
+
+    %section.main
+      %article.cfp
+        %h2 
+          CFP is open
+          %a.twitter-share-button{"data-lang" => "en", "data-text" => "CFP is open at Rubyday, the Italian Ruby Conference - coming June 2013", "data-hashtags" => "rubyday13", "data-url" => "http://www.rubyday.it", href: "https://twitter.com/share"} Tweet
+        :javascript
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs"); 
+        %p Be one of our miners: our curiosity ranges from the most polished gems to the hidden, yet-to-be-cut treasures of the Ruby world
+        
+        %a.button{href: "#cfp", "data-toggle" => "modal"}
+          Submit a talk
+
+    %section.bottombar
+      %article.newsletter
+        %form#mc-embedded-subscribe-form{action: "http://rubyday.us4.list-manage.com/subscribe/post?u=c9c6cfcde0d5ae20f60be2174&amp;id=d8e33dce43", method: "post", name: "mc-embedded-subscribe-form", target: "_blank"}
+          %p Let us keep you posted (no spam, promise)
+          %input.email#mce-EMAIL{type: "email", placeholder: "your@email", name: "EMAIL"}
+          %input.button#mc-embedded-subscribe{type: "submit", value: "Subscribe", name: "subscribe"}
+
+      %article.social
+        %p Get in touch with us, we're friendly
+        %a{href: "http://twitter.com/rubydayit", target: "_blank"}>
+          %img{src: "images/twitter.png", alt: "twitter icon"}
+        %a{href: "http://www.facebook.com/groups/152463788155829/", target: "_blank"}>
+          %img{src: "images/facebook.png", alt: "facebook icon"}         
+        %a{href: "http://plus.google.com/u/1/communities/106175479652679046256", target: "_blank"}>
+          %img{src: "images/googleplus.png", alt: "googleplus icon"}
+        %a{href: "mailto:info@rubyday.it"}>
+          %img{src: "images/email.png", alt: "email icon"}
+
+
+
+    %footer
+
+                
+      .iubenda
+        %a#iubenda-embed.iubenda-black{:href => "https://www.iubenda.com/privacy-policy/891527", :title => "Privacy Policy"} Privacy Policy
+        :javascript
+          (function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; w.addEventListener ? w.addEventListener("load", loader, false) : w.attachEvent("onload", loader);})(window, document);
+
+
+    .modal#cfp.hide.fade
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+        %h3 &nbsp;
+      .modal-body
+        %iframe{:frameborder => "0", :height => "490px", :marginheight => "0", :marginwidth => "0", :src => "https://docs.google.com/a/fruktarbo.com/spreadsheet/embeddedform?formkey=dFZQaEdSaFdKZVlDM1VoUEx2bzFuT1E6MQ", :width => "100%"} Caricamento in corso...
+
+      .modal-footer

@@ -16,3 +16,7 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+.sass-cache/
+.rvmrc
+.DS_Store
