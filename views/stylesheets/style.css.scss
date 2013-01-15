@@ -6,14 +6,14 @@ $light_red: rgb(255,110,108);
 $dark_red: rgb(150,34,35);
 
 html {
-  background: black image_url('background.jpg') no-repeat 30% 80px;  
+  background: black image_url('background.jpg') no-repeat center 80px;  
 }
 
 body {
+  background: transparent;
   width: 960px;
   margin: 0 auto;
   color: white;
-  background: transparent;
   font-family: "futura-pt", sans-serif;
   font-size: 16px;
   line-height: 1.7em;
@@ -41,7 +41,12 @@ header {
 
 footer {
   margin-top: 72px;
-  text-align: center
+  text-align: center;
+  font-size: .8em;
+
+  a, a:hover, a:active, a:visited {
+    color: white;
+  }
 }
 
 // modules
