@@ -1,9 +1,10 @@
 @import "compass";
 
+// base
+
 $light_red: rgb(255,110,108);
 $dark_red: rgb(150,34,35);
 
-// base
 html {
   background: black image_url('background.jpg') no-repeat 30% 80px;  
 }
