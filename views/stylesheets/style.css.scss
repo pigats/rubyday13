@@ -36,13 +36,12 @@ header {
 
 .bottombar {
   @include clearfix;
-  text-align: center;
 }
 
 footer {
   margin-top: 72px;
   text-align: center;
-  font-size: .8em;
+  font-size: .6em;
 
   a, a:hover, a:active, a:visited {
     color: white;
@@ -66,11 +65,14 @@ footer {
 .newsletter {
   width: 400px;
   float: left;
+  text-align: center;
+  font-size: .8em;
 }
 
 .social {
   width: 400px;
   float: right;
+  text-align: right;
 
   a {
     display: inline-block;
@@ -105,14 +107,14 @@ footer {
 
 input[type=email].email {
   @include border-right-radius(0);
-  margin: 0 -4px 18px 0;
+  margin: 0 -4px 0 0;
   width: 200px;
 
   + input[type=submit] {
     border-left: none;
     @include border-left-radius(0);
     width: auto;
-    margin-top: 0;
+    margin: 0;
 
     &:active {
       top: 0;
